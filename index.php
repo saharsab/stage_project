@@ -43,7 +43,7 @@
 
 ?>
 
-	<!-- HOME SECTION -->
+	<!-- HOME SECTION  -->
 
 	<section class="home-section" id="home">
 		<div class="container">
@@ -51,10 +51,10 @@
 				<div class="col-md-6 home-left-section">
 					<div style="padding: 100px 0px; color: white;">
 						<h1>
-							VINCENT PIZZA.
+							TABLETANGO.
 						</h1>
 						<h2>
-							MAKING PEOPLE HAPPY
+							BETTER FOOD BETTR MOOD
 						</h2>
 						<hr>
 						<p>
@@ -330,13 +330,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 sm-padding">
-                    <div class="contact-info">
-                        <h2>
+                    <div class="contact-para">
+                        <h2 class="contact-para">
                             Get in touch with us & 
                             <br>send us message today!
                         </h2>
-                        <p>
-                            Saasbiz is a different kind of architecture practice. Founded by LoganCee in 1991, we’re an employee-owned firm pursuing a democratic design process that values everyone’s input.
+                        <p class="contact-para">
+                            
+							TableTango, founded by Sahar and Meriem, is a distinguished culinary destination known for its commitment to excellence
+ 								since 2024. With a rich history and a passion for exceptional dining experiences, 
+								the restaurant prides itself on crafting mouthwatering menus that showcase the artistry of flavors.
                         </p>
                         <h3>
                             <?php echo $restaurant_address; ?>
@@ -402,6 +405,7 @@
 	<section class="our_qualities_v2">
 		<div class="container">
 			<div class="row">
+				
 				<div class="col-md-4" style="padding: 10px;">
 					<div class="quality quality_1">
 						<div class="text_inside_quality">
@@ -429,31 +433,30 @@
 
 	<!-- WIDGET SECTION / FOOTER -->
 
-    <section class="widget_section" style="background-color: #222227;padding: 100px 0;">
+    <section class="widget_section" style="background-color: #222227;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
-                        <img src="Design/images/restaurant-logo.png" alt="Restaurant Logo" style="width: 150px;margin-bottom: 20px;">
-                        <p>
-                            Our Restaurnt is one of the bests, provide tasty Menus and Dishes. You can reserve a table or Order food.
+                    <div class="footer_widget" style="padding: 100px 0;margin-left:0px;">
+                        <img src="Design/images/R LOGO.png" alt="Restaurant Logo"style="width: 150px;">
+                        <p style="font-size: 15px;">
+						Savor the exquisite flavors of our restaurant, offering a delectable array of menus and dishes.We are committed to providing you with an exceptional
                         </p>
                         <ul class="widget_social">
                             <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
                             <li><a href="#" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
                             <li><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                          
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                     <div class="footer_widget">
-                        <h3>Headquarters</h3>
-                        <p>
+                <div class="col-lg-3 col-md-6" >
+                     <div class="footer_widget" style="margin-left: 50px;padding: 135px 0px 0px 10px;">
+                        <h3 >Headquarters</h3>
+                        <p style="font-size: 15px;">
                             <?php echo $restaurant_address; ?>
                         </p>
-                        <p>
+                        <p style="font-size: 15px;">
                             <?php echo $restaurant_email; ?>
                             <br>
                             <?php echo $restaurant_phonenumber; ?>   
@@ -461,28 +464,14 @@
                      </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
+                    <div class="footer_widget" style="margin-left: 50px;padding: 135px 0px 0px 10px;">
                         <h3>
                             Opening Hours
                         </h3>
                         <ul class="opening_time">
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
+                            <li style="font-size: 15px;">Monday - Friday 11:30am - 2:08pm</li>
+                            
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
-                        <h3>Subscribe to our contents</h3>
-                        <div class="subscribe_form">
-                            <form action="#" class="subscribe_form" novalidate="true">
-                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address...">
-                                <button type="submit" class="submit">SUBSCRIBE</button>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

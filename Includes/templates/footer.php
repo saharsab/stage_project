@@ -2,22 +2,17 @@
 		<footer class="footer_section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 xs-padding">
+					<div class="col-md-12 xs-padding text-center">
 						<div class="copyright">
 							© 
+							<!-- pour l'année -->
 							<script type="text/javascript"> 
 								document.write(new Date().getFullYear())
 							</script>
-							Vincent Restaurant Powered by JAIRI Idriss
+							TableTango Restaurant Powered by Sahar and Meriem
 						</div>
 					</div>
-					<div class="col-md-6 xs-padding">
-						<ul class="footer_social">
-							<li><a href="#">Orders</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Report Problem</a></li>
-						</ul>
-					</div>
+					
 				</div>
 			</div>
 		</footer>

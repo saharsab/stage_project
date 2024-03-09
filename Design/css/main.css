@@ -252,8 +252,8 @@ ul.nav>li>a:hover
     color: rgb(255, 255, 255);
     white-space: nowrap;
     letter-spacing: 12px;
-    font-weight: 400;f
-    ont-size: 30px;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .home-section p
@@ -274,10 +274,11 @@ ul.nav>li>a:hover
 
 .our_qualities
 {
-    background: url(../images/our_qualities_bg.png);
-    background-position: center;
+    /* background: url(../images/our_qualities_bg.png); */
+    background-color: #ffc851;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
     
 }
@@ -400,12 +401,17 @@ ul.nav>li>a:hover
 .contact-section
 {
     padding: 100px;
-    background-image: url('../images/back_3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(26, 25, 25, 0.7)),url('../images/mplats.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
-
+.contact-para{
+    color: white;
+    text-decoration: solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .contact-section
 {
     padding:100px 0px;
@@ -470,7 +476,7 @@ ul.nav>li>a:hover
 
 .our_qualities_v2
 {
-    background-color: #121618;
+    background-color: black;
     padding: 100px 0px;
 }
 
@@ -484,17 +490,18 @@ ul.nav>li>a:hover
 
 .quality_1
 {
-    background-image: url('../images/img_1.jpg');
+    background-image: url('../images/quality\ foods1.jpg');
 }
 
 .quality_2
 {
-    background-image: url('../images/img_2.jpg');
+    background-image: url('../images/quality\ foods2.jpg');
 }
 
 .quality_3
 {
-    background-image: url('../images/img_3.jpg');
+    background-image: url('../images/quality\ foods\ 3.jpg');
+  
 }
 
 .text_inside_quality
@@ -572,28 +579,9 @@ ul.nav>li>a:hover
     color: #999;
     line-height: 35px;
 }
-.subscribe_form .submit 
-{
-    background-color: #ffc851;
-    color: #fff;
-    font-family: "Work Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 50px;
-    display: inline-block;
-    padding: 0 10px;
-    float: left;
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    transition: all 0.5s ease-in-out;
-}
 
-.subscribe_form .submit:hover 
-{
-    background-color: #897666;
-    transition: all 0.5s ease-in-out;
-}
+
+
 
 
 /*** END WIDGET SECTION - FOOTER STYLE ***/
@@ -607,6 +595,7 @@ ul.nav>li>a:hover
     background-color: #222227;
     border-top: 1px solid #333;
     padding: 30px 0;
+    
 }
 
 .footer_section .copyright 
@@ -633,6 +622,15 @@ ul.nav>li>a:hover
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 20px;
+}
+.footer_widget{
+    /* padding: 100px 0px; */
+    margin-left: 50px;
+    float: left;
+ 
+   
+    
+    
 }
 
 /*** END FOOTER BOTTOM STYLE ***/
