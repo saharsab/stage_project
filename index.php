@@ -219,7 +219,7 @@
 	                                                            <?php echo $menu['menu_description']; ?>
 	                                                        </p>
 	                                                        <span class="menu_price">
-	                                                        	<?php echo "$".$menu['menu_price']; ?>
+	                                                        	<?php echo $menu['menu_price']."DH"; ?>
 	                                                        </span>
 	                                                    </div>
 	                                                </div>
@@ -268,7 +268,7 @@
 	                                                            <?php echo $menu['menu_description']; ?>
 	                                                        </p>
 	                                                        <span class="menu_price">
-	                                                        	<?php echo "$".$menu['menu_price']; ?>
+	                                                        	<?php echo $menu['menu_price']."DH"; ?>
 	                                                        </span>
 	                                                    </div>
 	                                                </div>
@@ -402,7 +402,7 @@
 
 	<!-- OUR QUALITIES SECTION -->
 	
-	<section class="our_qualities_v2">
+	<section class="our_qualities_v2" >
 		<div class="container">
 			<div class="row">
 				
@@ -433,7 +433,7 @@
 
 	<!-- WIDGET SECTION / FOOTER -->
 
-    <section class="widget_section" style="background-color: #222227;">
+    <section class="widget_section" style="background-color: #222227;" id="info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">

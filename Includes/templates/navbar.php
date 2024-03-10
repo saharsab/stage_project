@@ -14,13 +14,14 @@
                             <li><a href="index.php#home">HOME</a></li>
                             <li><a href="index.php#menus">MENUS</a></li>
                             <li><a href="index.php#gallery">GALLERY</a></li>
-                            <li><a href="index.php#about">ABOUT</a></li>
+                            <li><a href="index.php#info">ABOUT</a></li>
                             <li><a href="index.php#contact">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="header-btn" style="margin-left:10px">
                         <a href="table-reservation.php" target="_blank" class="menu-btn">Reserve Table</a>
                     </div>
+                    
                 </div>
             </nav>
         </div>

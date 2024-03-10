@@ -63,15 +63,13 @@
 
     <!-- START ORDER FOOD SECTION -->
 
-    <section style="
-    background: url(Design/images/food_pic.jpg);
+    <section style="  background: url(Design/images/tabletango2.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;">
         <div class="layer">
             <div style="text-align: center;padding: 15px;">
-                <h1 style="font-size: 120px; color: white;font-family: 'Roboto'; font-weight: 100;
-">Book a Table</h1>
+                <h1 style="font-size: 120px; font-family: 'Roboto'; font-weight: 100; color: #ffc851;" class="text-warning">Reserve a Table</h1>
             </div>
         </div>
         
@@ -142,7 +140,7 @@
 
 
             <div class="text_header">
-                <span>
+                <span class="text-warning">
                     1. Select Date & Time
                 </span>
             </div>
@@ -172,6 +170,8 @@
                                 <option value="2" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Two people</option>
                                 <option value="3" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Three people</option>
                                 <option value="4" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Four people</option>
+                                <option value="5" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>five people</option>
+                                <option value="6" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>six people</option>
                             </select>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                         $table_id = $rows['table_id'];
                         ?>
                             <div class="text_header">
-                                <span>
+                                <span class="text-warning">
                                     2. Client details
                                 </span>
                             </div>
@@ -258,7 +258,7 @@
                                     
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="submit_table_reservation_form" class="btn btn-info" value="Make a Reservation">
+                                    <input type="submit" name="submit_table_reservation_form" class="btn btn-warning text-light" value="Make a Reservation">
                                 </div>
                             </form>
                         <?php
@@ -292,7 +292,7 @@
         }
     </style>
 
-    <section class="restaurant_details" style="background: url(Design/images/food_pic_2.jpg);
+    <section class="restaurant_details" style="background: url(Design/images/tabletango3.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
@@ -302,15 +302,15 @@
         <div class="layer">
             <div class="container">
             <div class="row">
-            <div class="col-md-3 details_card">
-                <span>30</span>
+            <div class="col-md-3 details_card text-warning">
+                <span>100</span>
                 <div>
                     Total 
                     <br>
                     Reservations
                 </div>
             </div>
-            <div class="col-md-3 details_card">
+            <div class="col-md-3 details_card text-warning">
                 <span>30</span>
                 <div>
                     Total 
@@ -318,15 +318,15 @@
                     Menus
                 </div>
             </div>
-            <div class="col-md-3 details_card">
-                <span>30</span>
+            <div class="col-md-3 details_card text-warning">
+                <span>10</span>
                 <div>
                     Years of 
                     <br>
                     Experience
                 </div>
             </div>
-            <div class="col-md-3 details_card">
+            <div class="col-md-3 details_card text-warning" >
                 <span>30</span>
                 <div>
                     Profesionnal 

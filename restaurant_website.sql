@@ -118,7 +118,6 @@ CREATE TABLE `menus` (
 
 INSERT INTO `menus` (`menu_id`, `menu_name`, `menu_description`, `menu_price`, `menu_image`, `category_id`) VALUES
 (1, 'Moroccan Couscous', 'Moroccan couscous is a traditional dish consisting of fluffy semolina grains steamed to perfection, accompanied by a rich and aromatic stew of tender meat, vegetables, &amp; fragrant spices.', 14.00, '88737_couscous_meat.jpg', 8),
-(2, 'Beef Hamburger', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 3.80, 'burger.jpeg', 1),
 (3, 'Ice Cream', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 7.50, 'summer-dessert-sweet-ice-cream.jpg', 2),
 (5, 'Coffee', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 10.00, 'coffee.jpeg', 3),
 (6, 'Ice Tea', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 3.20, '76643_ice_tea.jpg', 3),
@@ -128,7 +127,15 @@ INSERT INTO `menus` (`menu_id`, `menu_name`, `menu_description`, `menu_price`, `
 (11, 'Moroccan Tajine', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 20.00, '58146_Moroccan Chicken Tagine.jpeg', 8),
 (12, 'Moroccan Bissara', 'Bissara is a traditional Moroccan dish made from dried split fava beans (also known as broad beans) that are cooked and blended into a smooth and flavorful soup.', 10.00, '61959_Bissara.jpg', 8),
 (16, 'Couscous', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 20.00, '76635_57738_w1024h768c1cx256cy192.jpg', 8);
-
+(13, 'Cigars', 'A perfect finger food, this dish is essentially a flaky, crunchy pastry (warka) stuffed with a flavor-packed.', 40.00, 'cigars.jpeg', 2);
+(14,'Sello','Sellou, also called Sfouf, is a wonderful Moroccan treat made of roasted flour, fried almonds, healthy seeds, butter, honey, and a hint of cinnamon. Naturally sweetened and packed with protein.',30.00,'sfof.jpeg',2 );
+(10,'Chebakia',' Chebakia  is a Moroccan sesame cookie that is shaped into a flower, fried and then coated with honey. ',10.00,'chbakiya.jpeg',2);
+(15,'Moroccan cookies','Moroccan cookies are a wonderful luxury treat for any time! Generally, these Moroccan cookies speak of home and are produced from natural ingredients',50.00,'hliwat1.jpeg',2)
+(2,'Tea','Moroccan mint tea is the traditional tea of Morocco made with peppermint, spearmint, and herbs along with “gunpowder” green tea, and sugar.',20.00,'atay.jpeg',3);
+(4,'Zaazaa','Moroccan Avocado Milkshake, also known as ZaaZaa, is the perfect mix of refreshment and indulgence.',100.00,'zaazaa.jpeg',3);
+(17,'Morrocan Pastilla','A classic Moroccan seafood pie with shrimp, calamari, fish and Chinese vermicelli stuffing',200.00,'pastilla.jpeg',1);
+(18,'Couscous','This dish is a flavorful blend of root vegetables, chickpeas, and raisins, on a bed of couscous. Here is the recipe to make Moroccan-style couscous at home.',150.00,'couscous.jpeg',1);
+(19,'tajine.jpeg','Chicken tagine is a traditional Moroccan dish of chicken pieces braised with spices, garlic, onion, olives, and preserved lemons.',150.00,'tajine.jpeg',1)
 -- --------------------------------------------------------
 
 --

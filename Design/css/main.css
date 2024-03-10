@@ -632,5 +632,15 @@ ul.nav>li>a:hover
     
     
 }
-
+.tablereservation{
+    
+    background: url('../images/tabletango.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffc851;
+}
+.aboutpage{
+    background-color: #222227;
+}
 /*** END FOOTER BOTTOM STYLE ***/
