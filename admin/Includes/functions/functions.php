@@ -6,9 +6,9 @@
 	{
 		global $pageTitle;
 		if(isset($pageTitle))
-			echo $pageTitle." | Vincent Restaurant - Your Restaurant";
+			echo $pageTitle." | TableTango Restaurant - Your Restaurant";
 		else
-			echo "Vincent Restaurant | Your Restaurant";
+			echo "TableTango Restaurant | Your Restaurant";
 	}
 
 	/*
@@ -53,10 +53,12 @@
 	*/
 
   	function test_input($data) 
-  	{
+  	{  //supprimer l'espace
       	$data = trim($data);
-      	$data = stripslashes($data);
-      	$data = htmlspecialchars($data);
+		//supprimer slach
+      	// $data = stripslashes($data);
+		//afficher l'echo avec les balise html quand on a donnée
+      	// $data = htmlspecialchars($data);
       	return $data;
   	}
 

@@ -48,15 +48,11 @@
             $menu_categories = $stmt->fetchAll();
 
         ?>
-            <div class="card">
-                <div class="card-header">
-                    <?php echo $pageTitle; ?>
-                </div>
-                <div class="card-body">
+           
 
                 	<!-- ADD NEW CATEGORY BUTTON -->
 
-                	<button class="btn btn-success btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_category" data-placement="top">
+                	<button class="btn btn-primary btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_category" data-placement="top">
                     	<i class="fa fa-plus"></i> 
                     	Add Category
                 	</button>
@@ -94,7 +90,7 @@
 
                     <table class="table table-bordered categories-table">
                         <thead>
-                            <tr>
+                            <tr class="text-warning">
                                 <th scope="col">Category ID</th>
                                 <th scope="col">Category Name</th>
                                 <th scope="col">Manage</th>

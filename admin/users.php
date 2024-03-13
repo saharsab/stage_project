@@ -44,17 +44,13 @@
                 $users = $stmt->fetchAll();
 
             ?>
-                <div class="card">
-                    <div class="card-header">
-                        <?php echo $pageTitle; ?>
-                    </div>
-                    <div class="card-body">
+                
 
                         <!-- USERS TABLE -->
 
                         <table class="table table-bordered users-table">
                             <thead>
-                                <tr>
+                                <tr class="text-warning">
                                     <th scope="col">Username</th>
                                     <th scope="col">E-mail</th>
                                     <th scope="col">Full Name</th>
@@ -76,7 +72,7 @@
                                                 echo $user['full_name'];
                                             echo "</td>";
                                             echo "<td>";
-                                                echo "<button class='btn btn-success btn-sm rounded-0'>";
+                                                echo "<button class='btn btn-primary btn-sm rounded-0'>";
                                                     echo "<a href='users.php?do=Edit&user_id=".$user['user_id']."' style='color: white;'";
                                                     echo "<i class='fa fa-edit'></i>";
                                                     echo "</a>";

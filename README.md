@@ -1,8 +1,8 @@
-<h1>RestaurantWebsite | A Simple Restaurant Website using PHP & MYSQL</h1>
+<h1>TableTango website | A Simple Restaurant Website using PHP & MYSQL</h1>
 <h2>Online Food Ordering and Table Reservation</h2>
 <hr>
 <div>
-	<h3>Technologies</h3>
+	<h3>Languages</h3>
   	<ul>
 		<li>HTML & CSS</li>
 		<li>Bootstrap</li>
@@ -13,7 +13,7 @@
 </div>
 <hr>
 <div>
-	<h3>Website DEMO</h3>
+	<h3>Website Informations</h3>
   	<ul>
 		
 		<li>Admin Login Page: http://localhost/restaurant-website-php-mysql/admin/</li>

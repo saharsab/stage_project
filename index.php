@@ -58,7 +58,8 @@
 						</h2>
 						<hr>
 						<p>
-							Italian Pizza With Cherry Tomatoes and Green Basil  
+						TableTango, a Moroccan traditional restaurant, <br>
+						 invites diners to savor the rich tapestry of flavors and cultural heritage through its authentic dishes.
 						</p>
 						<div style="display: flex;">
 							<a href="order_food.php" target="_blank" class="bttn_style_1" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">

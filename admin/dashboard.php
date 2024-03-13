@@ -35,11 +35,11 @@
 
             </script>
 
-            <!-- TOP 4 CARDS -->
+            <!-- 2 CARDS -->
 
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="panel panel-green ">
+                    <div class="panel panel-primary " >
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-sm-3">
@@ -83,52 +83,9 @@
                     </div>
                 </div>
                 
-                <div class=" col-sm-6 col-lg-3">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <i class="far fa-calendar-alt fa-4x"></i>
-                                </div>
-                                <div class="col-sm-9 text-right">
-                                    <div class="huge"><span>32</span></div>
-                                    <div>Total Appointments</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
+                
                 </div>
-                <div class=" col-sm-6 col-lg-3">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <i class="fas fa-pizza-slice fa-4x"></i>
-                                </div>
-                                <div class="col-sm-9 text-right">
-                                    <div class="huge"><span><?php echo countItems("order_id","placed_orders")?></span></div>
-                                    <div>Total Orders</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+               
             <!-- START ORDERS TABS -->
 
             <div class="card" style = "margin: 20px 10px">
@@ -222,7 +179,7 @@
 
                                                 echo "</td>";
                                                 echo "<td>";
-                                                    echo $total_price."$";
+                                                    echo $total_price."DH";
                                                 echo "</td>";
                                                 echo "<td>";
                                                     ?>
@@ -398,7 +355,8 @@
                                                             from menus m, in_order in_o
                                                             where m.menu_id = in_o.menu_id
                                                             and order_id = ?");
-                                                    $stmtMenus->execute(array($order['order_id']));
+                                                    $stmtMenus->execute(array($row['order_id']));
+
                                                     $menus = $stmtMenus->fetchAll();
                                                     foreach($menus as $menu)
                                                     {
@@ -860,5 +818,31 @@
             }
         });
     });
+
+
+
+
+    $(document).ready(function() {
+    $('.liberate_table_button').click(function() {
+        var reservationId = $(this).data('id');
+        
+        // Perform AJAX request to liberate the table
+        $.ajax({
+            type: 'POST',
+            url: 'dashboard.php', // Change this URL to the correct endpoint
+            data: { reservation_id: reservationId },
+            success: function(response) {
+                // Handle success response here
+                console.log(response);
+                // Optionally, close the modal after successful liberation
+                $('#<?php echo $liberate_data; ?>').modal('hide');
+            },
+            error: function(xhr, status, error) {
+                // Handle error here
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
 
 </script>

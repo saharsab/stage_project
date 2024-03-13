@@ -151,16 +151,12 @@
                 $menus = $stmt->fetchAll();
 
             ?>
-                <div class="card">
-                    <div class="card-header">
-                        <?php echo $pageTitle; ?>
-                    </div>
-                    <div class="card-body">
+               
 
                         <!-- ADD NEW MENU BUTTON -->
 
                         <div class="above-table" style="margin-bottom: 1rem!important;">
-                            <a href="menus.php?do=Add" class="btn btn-success">
+                            <a href="menus.php?do=Add" class="btn btn-primary">
                                 <i class="fa fa-plus"></i> 
                                 <span>Add new Menu</span>
                             </a>
@@ -168,9 +164,9 @@
 
                         <!-- MENUS TABLE -->
 
-                        <table class="table table-bordered menus-table">
+                        <table class="table table-bordered menus-table ">
                             <thead>
-                                <tr>
+                                <tr class="text-warning">
                                     <th scope="col">Menu Name</th>
                                     <th scope="col">Menu Category</th>
                                     <th scope="col">Description</th>
@@ -193,7 +189,7 @@
                                                 echo $menu['menu_description'];
                                             echo "</td>";
                                             echo "<td>";
-                                                echo "$".$menu['menu_price'];
+                                                echo $menu['menu_price']."DH";
                                             echo "</td>";
                                             echo "<td>";
                                                 /****/
@@ -221,7 +217,7 @@
                                                                                     <img src="<?php echo $source; ?>" >
                                                                                     <div class="caption">
                                                                                         <h3>
-                                                                                            <span style="float: right;">$<?php echo $menu['menu_price'];?></span>
+                                                                                            <span style="float: right;"><?php echo $menu['menu_price'];?>DH</span>
                                                                                             <?php echo $menu['menu_name'];?>
                                                                                         </h3>
                                                                                         <p>
@@ -239,7 +235,7 @@
                                                             <!-- EDIT BUTTON -->
 
                                                             <li class="list-inline-item" data-toggle="tooltip" title="Edit">
-                                                                <button class="btn btn-success btn-sm rounded-0">
+                                                                <button class="btn btn-warning btn-sm rounded-0">
                                                                     <a href="menus.php?do=Edit&menu_id=<?php echo $menu['menu_id']; ?>" style="color: white;">
                                                                         <i class="fa fa-edit"></i>
                                                                     </a>
@@ -401,7 +397,7 @@
                                         <!-- MENU PRICE INPUT -->
 
                                         <div class="form-group">
-                                            <label for="menu_price">Menu Price($)</label>
+                                            <label for="menu_price">Menu Price(DH)</label>
                                             <input type="text" class="form-control" value="<?php echo (isset($_POST['menu_price']))?htmlspecialchars($_POST['menu_price']):'' ?>" placeholder="Menu Price" name="menu_price">
                                             <?php
 

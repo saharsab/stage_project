@@ -2,15 +2,48 @@
 
 <?php
     //Set page title
-    $pageTitle = 'Order Food';
+     $pageTitle = 'Order Food';
 
     include "connect.php";
     include 'Includes/functions/functions.php';
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
+ //Getting website settings
 
+ $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
+ $stmt_web_settings->execute();
+ $web_settings = $stmt_web_settings->fetchAll();
+
+ $restaurant_name = "";
+ $restaurant_email = "";
+ $restaurant_address = "";
+ $restaurant_phonenumber = "";
+
+ foreach ($web_settings as $option)
+ {
+     if($option['option_name'] == 'restaurant_name')
+     {
+         $restaurant_name = $option['option_value'];
+     }
+
+     elseif($option['option_name'] == 'restaurant_email')
+     {
+         $restaurant_email = $option['option_value'];
+     }
+
+     elseif($option['option_name'] == 'restaurant_phonenumber')
+     {
+         $restaurant_phonenumber = $option['option_value'];
+     }
+     elseif($option['option_name'] == 'restaurant_address')
+     {
+         $restaurant_address = $option['option_value'];
+     }
+ }
 
 ?>
+
+
 
     <!-- ORDER FOOD PAGE STYLE -->
 
@@ -167,7 +200,7 @@
 
         .next_prev_buttons
         {
-            background-color: #4CAF50;
+            background-color: #ffc851;
             color: #ffffff;
             border: none;
             padding: 10px 20px;
@@ -270,7 +303,7 @@
 				</div>
 
                 <div class="text_header">
-                    <span>
+                    <span class="text-warning">
                         1. Choice of Items
                     </span>
                 </div>
@@ -306,7 +339,7 @@
 				                                	echo "<div class = 'item_select_part'>";
 				                                    	echo "<div class = 'menu_price_field'>";
 				    										echo "<span style = 'font-weight: bold;'>";
-				                                    			echo $row['menu_price']."$";
+				                                    			echo $row['menu_price']."DH";
 				                                    		echo "</span>";
 				                                    	echo "</div>";
 				                                    ?>
@@ -337,7 +370,7 @@
             <div class="client_details_tab order_food_tab" id="clients_tab">
 
                 <div class="text_header">
-                    <span>
+                    <span class="text-warning" >
                         2. Client Details
                     </span>
                 </div>
@@ -402,66 +435,50 @@
 
 	<!-- WIDGET SECTION / FOOTER -->
 
-    <section class="widget_section" style="background-color: #222227;padding: 100px 0;">
+    <section class="widget_section" style="background-color: #222227;" id="info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
-                        <img src="Design/images/restaurant-logo.png" alt="Restaurant Logo" style="width: 150px;margin-bottom: 20px;">
-                        <p>
-                            Our Restaurnt is one of the bests, provide tasty Menus and Dishes. You can reserve a table or Order food.
+                    <div class="footer_widget" style="padding: 100px 0;margin-left:0px;">
+                        <img src="Design/images/R LOGO.png" alt="Restaurant Logo"style="width: 150px;">
+                        <p style="font-size: 15px;">
+						Savor the exquisite flavors of our restaurant, offering a delectable array of menus and dishes.We are committed to providing you with an exceptional
                         </p>
                         <ul class="widget_social">
                             <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
                             <li><a href="#" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
                             <li><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                          
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                     <div class="footer_widget">
-                        <h3>Headquarters</h3>
-                        <p>
-                            962 Fifth Avenue, 3rd Floor New York, NY10022
+                <div class="col-lg-3 col-md-6" >
+                     <div class="footer_widget" style="margin-left: 50px;padding: 135px 0px 0px 10px;">
+                        <h3 >Headquarters</h3>
+                        <p style="font-size: 15px;">
+                            <?php echo $restaurant_address; ?>
                         </p>
-                        <p>
-                            contact@restaurant.com
+                        <p style="font-size: 15px;">
+                            <?php echo $restaurant_email; ?>
                             <br>
-                            (+123) 456 789 101    
+                            <?php echo $restaurant_phonenumber; ?>   
                         </p>
                      </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
+                    <div class="footer_widget" style="margin-left: 50px;padding: 135px 0px 0px 10px;">
                         <h3>
                             Opening Hours
                         </h3>
                         <ul class="opening_time">
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
-                            <li>Monday - Friday 11:30am - 2:008pm</li>
+                            <li style="font-size: 15px;">Monday - Friday 11:30am - 2:08pm</li>
+                            
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer_widget">
-                        <h3>Subscribe to our contents</h3>
-                        <div class="subscribe_form">
-                            <form action="#" class="subscribe_form" novalidate="true">
-                                <input type="email" name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address...">
-                                <button type="submit" class="submit">SUBSCRIBE</button>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- FOOTER BOTTOM  -->
 
     <?php include "Includes/templates/footer.php"; ?>

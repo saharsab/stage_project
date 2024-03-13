@@ -61,7 +61,7 @@ body
     background: #fff;
     min-height: 60px;
     padding: 10px 15px;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 rgb(255, 217, 67);
 }
 
 .nav-item-button
@@ -214,9 +214,9 @@ body
 .webpage-btn .nav-item-button 
 {
     font-weight: 700;
-    color: #fff;
-    background: #26dd7d;
-    border: 1px solid #26dd7d;
+    color: #fdfcfc;
+    background: #06adef;
+    border: 1px solid #048dc4;
 }
 
 .top-nav .top-menu .main-li 
@@ -228,7 +228,7 @@ body
 .a-verMenu:hover 
 {
     text-decoration: none;
-    background: #06adef;
+    background: #0496d0;
     color: #fff;
 }
 
@@ -418,12 +418,7 @@ body
     border-color: #337ab7;
 }
 
-.panel-green > .panel-heading 
-{
-    border-color: #5cb85c;
-    color: white;
-    background-color: #5cb85c;
-}
+
 
 .panel-primary>.panel-heading 
 {
@@ -432,34 +427,6 @@ body
     border-color: #337ab7;
 }
 
-.panel-red > .panel-heading 
-{
-    border-color: #d9534f;
-    color: white;
-    background-color: #d9534f;
-}
-
-.panel-yellow > .panel-heading 
-{
-    border-color: #f0ad4e;
-    color: white;
-    background-color: #f0ad4e;
-}
-
-.panel-green > a 
-{
-    color: #5cb85c;
-}
-
-.panel-red > a 
-{
-    color: #d9534f;
-}
-
-.panel-yellow > a 
-{
-    color: #f0ad4e;
-}
 
 .tab button 
 {
@@ -487,7 +454,7 @@ body
 .tab button.active 
 {
     color: #fff;
-    border-bottom: 4px solid #ffd943;
+    border-bottom: 4px solid rgb(255, 217, 67);
 }
 
 .tab
@@ -707,6 +674,7 @@ body
 .footer_social li 
 {
     display: inline-block;
+    
 }
 .footer_social li a 
 {

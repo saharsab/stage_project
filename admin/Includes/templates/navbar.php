@@ -2,7 +2,7 @@
 
     <header class="headerMenu сlearfix sb-page-header">   
         <div class="nav-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="dashboard.php">
                 Admin Panel
             </a> 
         </div>
@@ -11,7 +11,7 @@
             <ul class="nav top-menu">
                 <li id="user-btn" class="main-li dropdown" style="background:none;">
                     <div class="dropdown show">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-user"></i>
                             <span class="username">Lock and Key</span>
                             <b class="caret"></b>
@@ -41,7 +41,7 @@
                     </div>
                 </li>
                 <li class="main-li webpage-btn">
-                    <a class="nav-item-button " href="../" target="_blank">
+                    <a class=" btn btn-primary" href="../" target="_blank">
                         <i class="fas fa-eye"></i>
                         <span>View website</span>
                     </a>

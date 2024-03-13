@@ -39,15 +39,8 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`client_id`, `client_name`, `client_phone`, `client_email`) VALUES
-(9, 'Clinet 1', '02020202020', 'client1@gmail.com'),
-(10, 'Client 10', '0638383933', 'client10@gmail.com'),
-(11, 'Client 11', '06242556272', 'client11@yahoo.fr'),
-(13, 'Client 12', '030303030202', 'client1133@gmail.com'),
-(14, 'Client 12', '030303030', 'client14@gmail.com'),
-(16, 'Client 14', '0203203203', 'client14@gmail.com'),
-(17, 'Client 17', '0737373822', 'client17@gmail.com'),
-(18, 'Client 12', '02920320', 'client12@yahoo.fr'),
-(19, 'Test', '1034304300', 'test@gmail.com');
+(1, 'Clinet 1', '02020202020', 'client1@gmail.com'),
+(2, 'Test', '1034304300', 'test@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -66,11 +59,12 @@ CREATE TABLE `image_gallery` (
 --
 
 INSERT INTO `image_gallery` (`image_id`, `image_name`, `image`) VALUES
-(1, 'Moroccan Tajine', '58146_Moroccan Chicken Tagine.jpeg'),
-(2, 'Italian Pasta', 'img_1.jpg'),
-(3, 'Cook', 'img_2.jpg'),
-(4, 'Pizza', 'img_3.jpg'),
-(5, 'Burger', 'burger.jpeg');
+(1, 'tabletangopic1', 'res1.jpeg'),
+(2, 'tabletangopic2', 'res2.jpeg'),
+(3, 'tabletangopic3', 'res3.jpeg'),
+(4, 'tabletangopic4', 'res4.jpeg'),
+(5, 'tabletangopic5', 'res5.jpeg');
+(6,'tabletangopic6','res6.jpeg')
 
 -- --------------------------------------------------------
 
@@ -117,25 +111,24 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`menu_id`, `menu_name`, `menu_description`, `menu_price`, `menu_image`, `category_id`) VALUES
-(1, 'Moroccan Couscous', 'Moroccan couscous is a traditional dish consisting of fluffy semolina grains steamed to perfection, accompanied by a rich and aromatic stew of tender meat, vegetables, &amp; fragrant spices.', 14.00, '88737_couscous_meat.jpg', 8),
-(3, 'Ice Cream', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 7.50, 'summer-dessert-sweet-ice-cream.jpg', 2),
-(5, 'Coffee', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 10.00, 'coffee.jpeg', 3),
-(6, 'Ice Tea', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 3.20, '76643_ice_tea.jpg', 3),
-(7, 'Bucatini', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 20.00, 'macaroni.jpeg', 4),
-(8, 'Cannelloni', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 10.00, 'cooked_pasta.jpeg', 4),
-(9, 'Margherita', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 24.00, 'pizza.jpeg', 5),
-(11, 'Moroccan Tajine', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 20.00, '58146_Moroccan Chicken Tagine.jpeg', 8),
-(12, 'Moroccan Bissara', 'Bissara is a traditional Moroccan dish made from dried split fava beans (also known as broad beans) that are cooked and blended into a smooth and flavorful soup.', 10.00, '61959_Bissara.jpg', 8),
-(16, 'Couscous', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, lectus et mollis ultricies, justo arcu dignissim enim, eu eleifend lectus nulla.', 20.00, '76635_57738_w1024h768c1cx256cy192.jpg', 8);
-(13, 'Cigars', 'A perfect finger food, this dish is essentially a flaky, crunchy pastry (warka) stuffed with a flavor-packed.', 40.00, 'cigars.jpeg', 2);
-(14,'Sello','Sellou, also called Sfouf, is a wonderful Moroccan treat made of roasted flour, fried almonds, healthy seeds, butter, honey, and a hint of cinnamon. Naturally sweetened and packed with protein.',30.00,'sfof.jpeg',2 );
-(10,'Chebakia',' Chebakia  is a Moroccan sesame cookie that is shaped into a flower, fried and then coated with honey. ',10.00,'chbakiya.jpeg',2);
-(15,'Moroccan cookies','Moroccan cookies are a wonderful luxury treat for any time! Generally, these Moroccan cookies speak of home and are produced from natural ingredients',50.00,'hliwat1.jpeg',2)
-(2,'Tea','Moroccan mint tea is the traditional tea of Morocco made with peppermint, spearmint, and herbs along with “gunpowder” green tea, and sugar.',20.00,'atay.jpeg',3);
-(4,'Zaazaa','Moroccan Avocado Milkshake, also known as ZaaZaa, is the perfect mix of refreshment and indulgence.',100.00,'zaazaa.jpeg',3);
-(17,'Morrocan Pastilla','A classic Moroccan seafood pie with shrimp, calamari, fish and Chinese vermicelli stuffing',200.00,'pastilla.jpeg',1);
-(18,'Couscous','This dish is a flavorful blend of root vegetables, chickpeas, and raisins, on a bed of couscous. Here is the recipe to make Moroccan-style couscous at home.',150.00,'couscous.jpeg',1);
-(19,'tajine.jpeg','Chicken tagine is a traditional Moroccan dish of chicken pieces braised with spices, garlic, onion, olives, and preserved lemons.',150.00,'tajine.jpeg',1)
+(
+(1, 'Coffee', 'Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content.', 50.00, 'coffee.jpeg', 3),
+(2, 'Ice Tea', 'Iced tea is a form of cold tea. Though it is usually served in a glass with ice, it can refer to any tea that has been chilled or cooled.', 50.00, '76643_ice_tea.jpg', 3),
+(3, 'Cigars', 'A perfect finger food, this dish is essentially a flaky, crunchy pastry (warka) stuffed with a flavor-packed.', 40.00, 'cigars.jpeg', 2);
+(4,'Sello','Sellou, also called Sfouf, is a wonderful Moroccan treat made of roasted flour, fried almonds, healthy seeds, butter, honey, and a hint of cinnamon. Naturally sweetened and packed with protein.',30.00,'sfof.jpeg',2 );
+(5,'Moroccan cookies','Moroccan cookies are a wonderful luxury treat for any time! Generally, these Moroccan cookies speak of home and are produced from natural ingredients',50.00,'hliwat1.jpeg',2);
+(6,'Tea','Moroccan mint tea is the traditional tea of Morocco made with peppermint, spearmint, and herbs along with “gunpowder” green tea, and sugar.',20.00,'atay.jpeg',3);
+(7,'Juice','All our juices are made with fruit, not concentrate and are free of artificial flavours and sugar.',50.00,'juice.jpeg',3);
+(8,'Morrocan Pastilla','A classic Moroccan seafood pie with shrimp, calamari, fish and Chinese vermicelli stuffing',200.00,'pastilla.jpeg',1);
+(9,'Couscous','This dish is a flavorful blend of root vegetables, chickpeas, and raisins, on a bed of couscous. Here is the recipe to make Moroccan-style couscous at home.',150.00,'couscous.jpeg',1);
+(10,'Tajine','Chicken tagine is a traditional Moroccan dish of chicken pieces braised with spices, garlic, onion, olives, and preserved lemons.',150.00,'tajine.jpeg',1);
+(11,'Rfissa','Rfissa is a fabulous Moroccan dish of stewed chicken, lentils, and onions served on a bed of shredded msemen, trid pastry or bread.',130.00,'rfissa.jpeg',1);
+(12,'Seffa','Seffa Medfouna features savory, saffron-flavored chicken or meat buried within a mound of steamed broken vermicelli or couscous. Raisins, cinnamon, ground almonds and powdered sugar are traditional garnishes.',110.00,'sefa.jpeg',1));
+(13,'Chebakia',' Chebakia  is a Moroccan sesame cookie that is shaped into a flower, fried and then coated with honey. ',10.00,'chbakiya.jpeg',2);
+(14, 'Vegetarian salad','Indulge in the vibrant symphony of flavors and colors with our exquisite vegetarian salad.',70.00,'vem.jpeg',4);
+(15,'Beet salad','Indulge your taste buds in the delightful harmony of our beet salad, a captivating fusion of earthy sweetness and vibrant colors.'40.00,'beet.jpeg',4);
+(16,'Classic salad','Classic Moroccan salad with onions and tomatoes is a vibrant and refreshing dish that embodies the rich flavors of Moroccan cuisine.',30.00,'cs.jpeg',4);
+(17,'chopped thai salad','The chopped Thai salad is a feast for the eyes, showcasing a riot of colors and textures.',80.00,'ch.jpeg',4)
 -- --------------------------------------------------------
 
 --

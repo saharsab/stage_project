@@ -54,15 +54,9 @@
 
         ?>
 
-        <div class="card">
-            <div class="card-header">
-                <?php echo $pageTitle; ?>
-            </div>
-            <div class="card-body">
-
                 <!-- ADD NEW IMAGE BUTTON -->
 
-                <button class="btn btn-success btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_image" data-placement="top">
+                <button class="btn btn-primary btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_image" data-placement="top">
                     <i class="fa fa-plus"></i> 
                     Add Image
                 </button>
@@ -127,7 +121,7 @@
 
                 <table class="table table-bordered gallery-table">
                     <thead>
-                        <tr>
+                        <tr class="text-warning">
                             <th scope="col">ID</th>
                             <th scope="col">Image Name</th>
                             <th scope="col">Image</th>

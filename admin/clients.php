@@ -41,17 +41,13 @@
                 $clients = $stmt->fetchAll();
 
             ?>
-                <div class="card">
-                    <div class="card-header">
-                        <?php echo $pageTitle; ?>
-                    </div>
-                    <div class="card-body">
+                
 
                         <!-- CLIENTS TABLE -->
 
                         <table class="table table-bordered clients-table">
                             <thead>
-                                <tr>
+                                <tr class="text-warning">
                                     <th scope="col">Client Name</th>
                                     <th scope="col">Phone number</th>
                                     <th scope="col">E-mail</th>
