@@ -31,7 +31,7 @@
 		evt.currentTarget.className += " active_category";
 	}
 
-/* ============ VALIDATE EMAIL  ============== */
+/* ============ VALIDATion of EMAIL  ============== */
 
   function ValidateEmail(mail) 
   {

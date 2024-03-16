@@ -12,7 +12,7 @@
 	}
 
 	/*
-		This function returns the number of items in a given table
+		This function returns the number of items in a given table.
 	*/
 
     function countItems($item,$table)

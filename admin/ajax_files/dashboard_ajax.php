@@ -1,6 +1,6 @@
 <?php include '../connect.php'; ?>
 <?php include '../Includes/functions/functions.php'; ?>
-
+<!-- admin dashboard section oreder foods -->
 <?php
 	
 	if(isset($_POST['do_']) && $_POST['do_'] == "Deliver_Order")

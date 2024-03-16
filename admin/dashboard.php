@@ -11,7 +11,7 @@
     include 'Includes/functions/functions.php'; 
     include 'Includes/templates/header.php';
 
-    //TEST IF THE SESSION HAS BEEN CREATED BEFORE
+    //TEST IF THE SESSION HAS BEEN CREATED BEFORE OR NOT
 
     if(isset($_SESSION['username_restaurant_qRewacvAqzA']) && isset($_SESSION['password_restaurant_qRewacvAqzA']))
     {

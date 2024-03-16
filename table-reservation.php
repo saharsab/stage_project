@@ -1,7 +1,7 @@
 <!-- PHP INCLUDES -->
 
 <?php
-    //Set page title
+    //Set page title.
     $pageTitle = 'Table Reservation';
 
     include "connect.php";

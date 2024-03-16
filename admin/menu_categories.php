@@ -50,7 +50,7 @@
         ?>
            
 
-                	<!-- ADD NEW CATEGORY BUTTON -->
+                	<!-- ADD NEW CATEGORY BUTTON --->
 
                 	<button class="btn btn-primary btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_category" data-placement="top">
                     	<i class="fa fa-plus"></i> 

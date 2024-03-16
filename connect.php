@@ -1,9 +1,9 @@
 <?php
-    //data source name
+    //data source name.
     $dsn = 'mysql:host=localhost;dbname=restaurant_website';
-	// MySQL username
+	// MySQL username.
 	$user = 'root';
-	//MySQL password
+	//MySQL password.
 	$pass = '';
 	// pdo:hoya li katgerer la communication entre database w php 
 	//MYSQL_ATTR_INIT_COMMAND: allows you to send a command to the database server immediately after connecting.

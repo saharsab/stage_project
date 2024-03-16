@@ -46,7 +46,7 @@
             ?>
                 
 
-                        <!-- USERS TABLE -->
+                        <!-- USERS TABLE --->
 
                         <table class="table table-bordered users-table">
                             <thead>

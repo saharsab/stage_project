@@ -9,7 +9,7 @@
 	{
 		$con = new PDO($dsn,$user,$pass,$option);
 		$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		//echo 'Good Very Good !';
+		//echo 'Good Very Good !!!!';
 	}
 	catch(PDOException $ex)
 	{

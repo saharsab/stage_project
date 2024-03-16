@@ -16,7 +16,7 @@
                             <span class="username">Lock and Key</span>
                             <b class="caret"></b>
                         </a>
-                        <!-- DROPDOWN MENU -->
+                        <!-- DROPDOWN MENU CODE -->
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="users.php?do=Edit&user_id=<?php echo $_SESSION['userid_restaurant_qRewacvAqzA'] ?>">
                                 <i class="fas fa-user-cog"></i>

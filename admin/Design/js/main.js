@@ -35,7 +35,7 @@ function validateLoginForm()
 	}
 }
 
-/* =========== DASHBOARD TOGGLE ORDERS TABS ======== */
+/* =========== DASHBOARD ORDERS TABS ======== */
 
 function openTab(evt, tabName, tabContent, tabLinks) 
 {

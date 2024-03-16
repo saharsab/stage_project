@@ -8,7 +8,7 @@
 	}
 ?>
 
-<!-- PHP INCLUDES -->
+<!-- PHP INCLUDES. -->
 
 <?php include 'connect.php'; ?>
 <?php include 'Includes/functions/functions.php'; ?>

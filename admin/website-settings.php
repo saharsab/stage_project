@@ -70,7 +70,7 @@
                         </div>
                     </form>
 
-                    <!-- UPDATE WEBSITE SETTINGS -->
+                    <!-- UPDATE WEBSITE SETTINGS --->
                     <?php
                     	if(isset($_POST['save_settings']) && $_SERVER['REQUEST_METHOD'] == 'POST' && $form_flag == 0)
                 		{

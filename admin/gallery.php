@@ -54,7 +54,7 @@
 
         ?>
 
-                <!-- ADD NEW IMAGE BUTTON -->
+                <!-- ADD NEW IMAGE BUTTON. -->
 
                 <button class="btn btn-primary btn-sm" style="margin-bottom: 10px;" type="button" data-toggle="modal" data-target="#add_new_image" data-placement="top">
                     <i class="fa fa-plus"></i> 

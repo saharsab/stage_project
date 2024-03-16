@@ -1,6 +1,6 @@
 <?php include '../connect.php'; ?>
 <?php include '../Includes/functions/functions.php'; ?>
-
+<!-- menus ajax file in admin panel -->
 <?php
 
 	if(isset($_POST['do_']) && $_POST['do_'] == "Delete")

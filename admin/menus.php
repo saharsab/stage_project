@@ -162,7 +162,7 @@
                             </a>
                         </div>
 
-                        <!-- MENUS TABLE -->
+                        <!-- MENUS TABLE --->
 
                         <table class="table table-bordered menus-table ">
                             <thead>

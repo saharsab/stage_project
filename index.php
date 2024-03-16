@@ -85,42 +85,42 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="our_qualities_column">
-	                    <img src="Design/images/quality_food_img.png" >
+	                    <img src="Design/images/q_f.png" >
 	                    <div class="caption">
 	                        <h3>
 	                            Quality Foods
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+							Delight in the finest flavors crafted with care at our restaurant. Savor exquisite dishes brimming with fresh,
+							 locally sourced ingredients, and elevate your dining experience with every tantalizing bite.
 	                        </p>
 	                    </div>
 	                </div>
 				</div>
 				<div class="col-md-4">
 					<div class="our_qualities_column">
-	                    <img src="Design/images/fast_delivery_img.png" >
+	                    <img src="Design/images/f_d.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Fast Delivery
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+							Experience lightning-fast delivery at our restaurant, ensuring your meal arrives hot and fresh at your doorstep.
+							 With our efficient service, satisfy your cravings promptly and enjoy convenience without compromising on quality.
 	                        </p>
 	                    </div>
 	                </div>
 				</div>
 				<div class="col-md-4">
 					<div class="our_qualities_column">
-	                    <img src="Design/images/original_taste_img.png" >
+	                    <img src="Design/images/o_r.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Original Recipes
 	                        </h3>
 	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+							Discover culinary innovation at its finest with our restaurant's original recipes, meticulously crafted to tantalize your taste buds
+							. From signature dishes bursting with unique flavors to inventive twists on classics
 	                        </p>
 	                    </div>
 	                </div>
@@ -401,36 +401,7 @@
         </div>
     </section>
 
-	<!-- OUR QUALITIES SECTION -->
 	
-	<section class="our_qualities_v2" >
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-4" style="padding: 10px;">
-					<div class="quality quality_1">
-						<div class="text_inside_quality">
-							<h5>Quality Foods</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4" style="padding: 10px;">
-					<div class="quality quality_2">
-						<div class="text_inside_quality">
-							<h5>Fastest Delivery</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4" style="padding: 10px;">
-					<div class="quality quality_3">
-						<div class="text_inside_quality">
-							<h5>Original Recipes</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- WIDGET SECTION / FOOTER -->
 

@@ -18,7 +18,7 @@
 		</footer>
 
 	
-		<!-- INCLUDE JS SCRIPTS -->
+		<!-- INCLUDE JS SCRIPTS FILES -->
 
 		<script src="Design/js/jquery.min.js"></script>
 		<script src="Design/js/bootstrap.min.js"></script>

@@ -43,7 +43,7 @@
             ?>
                 
 
-                        <!-- CLIENTS TABLE -->
+                        <!-- CLIENTS TABLE INFOS -->
 
                         <table class="table table-bordered clients-table">
                             <thead>
