@@ -113,7 +113,7 @@ CREATE TABLE `menus` (
 INSERT INTO `menus` (`menu_id`, `menu_name`, `menu_description`, `menu_price`, `menu_image`, `category_id`) VALUES
 (
 (1, 'Coffee', 'Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content.', 50.00, 'coffee.jpeg', 3),
-(2, 'Ice Tea', 'Iced tea is a form of cold tea. Though it is usually served in a glass with ice, it can refer to any tea that has been chilled or cooled.', 50.00, '76643_ice_tea.jpg', 3),
+(2, 'Ice Tea', 'Iced tea is a form of cold tea. Though it is usually served in a glass with ice, it can refer to any tea that has been chilled or cooled.', 50.00, 'ice_tea.jpg', 3),
 (3, 'Cigars', 'A perfect finger food, this dish is essentially a flaky, crunchy pastry (warka) stuffed with a flavor-packed.', 40.00, 'cigars.jpeg', 2);
 (4,'Sello','Sellou, also called Sfouf, is a wonderful Moroccan treat made of roasted flour, fried almonds, healthy seeds, butter, honey, and a hint of cinnamon. Naturally sweetened and packed with protein.',30.00,'sfof.jpeg',2 );
 (5,'Moroccan cookies','Moroccan cookies are a wonderful luxury treat for any time! Generally, these Moroccan cookies speak of home and are produced from natural ingredients',50.00,'hliwat1.jpeg',2);
